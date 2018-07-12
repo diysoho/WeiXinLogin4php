@@ -24,7 +24,8 @@
 	}
 	$state=sha1($appid.$key.$clientRedirect_uri);
 	$_SESSION[$state]=$clientRedirect_uri;
-	$redirect_uri="http://".$_SERVER['HTTP_HOST']."/WeiXinLogin4php/getuserinfo.php";
+	$redirect_uri="http://www.haierac.cn/wx234/showinfo.php";
+	//echo $redirect_uri;
 	
 	$url="https://open.weixin.qq.com/connect/oauth2/authorize?appid=".__WXAPPID__."&redirect_uri=".urlencode($redirect_uri)."&response_type=code&scope=snsapi_userinfo&state=".$state."#wechat_clientstate";
 	echo "<script>location.href='".$url."';</script>";
