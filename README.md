@@ -14,3 +14,6 @@
 由于本程序返回给客户端redirect_uri?data={},data参数为json数据  
 客户端只需要接收data,并解析即可  
 data参数形如：{"success":false/true,"wxdata":"","msg":""}，微信登录成功wxdata就是微信公众号返回的用户信息json数据，否则为空
+
+
+getuserinfo.php 代码有错误，直接嫁接网页登录的showinfo.php ok  over.
